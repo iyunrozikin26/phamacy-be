@@ -1,9 +1,10 @@
 const drugRouter = require("express").Router();
-const Controller = require('../controllers/drugConstroller')
+const Controller = require("../controllers/drugConstroller");
+const { authentication, adminAccess } = require("../middlewares/auth");
 
 drugRouter.get("/", Controller.getAllDrugs);
-drugRouter.post("/", Controller.postDrug);
-drugRouter.put("/:drugId/edit", Controller.editDrug);
-drugRouter.delete("/:drugId/delete", Controller.deleteDrug);
+drugRouter.post("/", authentication, adminAccess, Controller.postDrug);
+drugRouter.put("/:drugId/edit", authentication, adminAccess, Controller.editDrug);
+drugRouter.delete("/:drugId/delete", authentication, adminAccess, Controller.deleteDrug);
 
 module.exports = drugRouter;

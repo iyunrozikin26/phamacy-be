@@ -1,0 +1,359 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-08-07T08:30:26.890Z",
+    "__export_source": "insomnia.desktop.app:v2022.5.0",
+    "resources": [
+        {
+            "_id": "req_6489f659990e4918bc2bb03b2ea63af7",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860984703,
+            "created": 1659860622524,
+            "url": "http://localhost:3000/users/registerPatient",
+            "name": "register patient",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    { "id": "pair_f012a6eab7ee4d1eab51a15832bce37d", "name": "phoneNumber", "value": "081234567899", "description": "" },
+                    { "id": "pair_50a5c69ebee948ab94f40ac7fa58355e", "name": "gender", "value": "male", "description": "" },
+                    { "id": "pair_6d1b358e6e964cb5836930352c921965", "name": "ktp", "value": "5204172601970001", "description": "" },
+                    { "id": "pair_800ac19f42a74529a361fd33b689a88f", "name": "dateOfBirth", "value": "1997-01-26", "description": "" },
+                    { "id": "pair_645ebcf7cf0b4d419d9aa9b456927020", "name": "password", "value": "11223344aA@", "description": "" }
+                ]
+            },
+            "parameters": [],
+            "headers": [{ "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" }],
+            "authentication": {},
+            "metaSortKey": -1659858784142,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "parentId": "wrk_78dae7cdb4604ca2ae0bb565d05de346",
+            "modified": 1659860622520,
+            "created": 1659860622520,
+            "name": "REST API MANDAYA TEST",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1000000000,
+            "_type": "request_group"
+        },
+        { "_id": "wrk_78dae7cdb4604ca2ae0bb565d05de346", "parentId": null, "modified": 1659527709839, "created": 1659527709839, "name": "New Document", "description": "", "scope": "design", "_type": "workspace" },
+        {
+            "_id": "req_c578af1a82094216817a4720dee73e96",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622532,
+            "created": 1659860622532,
+            "url": "http://localhost:3000/users/login",
+            "name": "login admin",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    { "id": "pair_f012a6eab7ee4d1eab51a15832bce37d", "name": "phoneNumber", "value": "082339835783", "description": "" },
+                    { "id": "pair_645ebcf7cf0b4d419d9aa9b456927020", "name": "password", "value": "11223344aA@", "description": "" }
+                ]
+            },
+            "parameters": [],
+            "headers": [{ "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" }],
+            "authentication": {},
+            "metaSortKey": -1659844543331.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1cd245264c7b46d197cd41397aac4a35",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622578,
+            "created": 1659860622578,
+            "url": "http://localhost:3000/users/login",
+            "name": "login patient",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    { "id": "pair_f012a6eab7ee4d1eab51a15832bce37d", "name": "phoneNumber", "value": "08233983578312", "description": "" },
+                    { "id": "pair_645ebcf7cf0b4d419d9aa9b456927020", "name": "password", "value": "11223344aA@", "description": "" }
+                ]
+            },
+            "parameters": [],
+            "headers": [{ "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" }],
+            "authentication": {},
+            "metaSortKey": -1659842763230.1875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d7d618fde57b4ce69b687f8a86e3b987",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622548,
+            "created": 1659860622548,
+            "url": "http://localhost:3000/drugs",
+            "name": "post drug",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    { "id": "pair_f012a6eab7ee4d1eab51a15832bce37d", "name": "name", "value": "obat 2", "description": "" },
+                    { "id": "pair_645ebcf7cf0b4d419d9aa9b456927020", "name": "price", "value": "10000", "description": "" },
+                    { "id": "pair_b5e7a44be315472cb714e878f5411eac", "name": "stock", "value": "25", "description": "" }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" },
+                {
+                    "id": "pair_0c77a666a61e4bfca9b71e725b7ea86a",
+                    "name": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6IjYyODIzMzk4MzU3ODMiLCJpYXQiOjE2NTk4NTk3MjV9.urcKTB-fbxBpXLC4dXPmia0sK6sh7FR_fh0Lw8_5uFs",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659840983128.875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7e8c4282474748f9b563d60fd02e35d4",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622555,
+            "created": 1659860622555,
+            "url": "http://localhost:3000/drugs/4/edit",
+            "name": "edit drug",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    { "id": "pair_f012a6eab7ee4d1eab51a15832bce37d", "name": "name", "value": "obat 4", "description": "" },
+                    { "id": "pair_645ebcf7cf0b4d419d9aa9b456927020", "name": "price", "value": "50000", "description": "" },
+                    { "id": "pair_b5e7a44be315472cb714e878f5411eac", "name": "stock", "value": "30", "description": "" }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" },
+                {
+                    "id": "pair_d3b0bcc47e21427dbf52c1be71191de0",
+                    "name": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6IjYyODIzMzk4MzU3ODMiLCJpYXQiOjE2NTk4NTk3MjV9.urcKTB-fbxBpXLC4dXPmia0sK6sh7FR_fh0Lw8_5uFs",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659839203027.5625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bdedc7c205904beb88148c49d25c6bd7",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622563,
+            "created": 1659860622563,
+            "url": "http://localhost:3000/drugs/4/delete",
+            "name": "delete drug",
+            "description": "",
+            "method": "DELETE",
+            "body": { "mimeType": "application/x-www-form-urlencoded", "params": [] },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" },
+                {
+                    "id": "pair_2d977eac9a8e429ab8be5bed810ccb76",
+                    "name": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6IjYyODIzMzk4MzU3ODMiLCJpYXQiOjE2NTk4NTk3MjV9.urcKTB-fbxBpXLC4dXPmia0sK6sh7FR_fh0Lw8_5uFs",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659838312976.9062,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7b6e17f757c54461a9c5ccefb92aabfe",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622540,
+            "created": 1659860622540,
+            "url": "http://localhost:3000/drugs",
+            "name": "get all drug",
+            "description": "",
+            "method": "GET",
+            "body": { "mimeType": "application/x-www-form-urlencoded", "params": [] },
+            "parameters": [],
+            "headers": [{ "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" }],
+            "authentication": {},
+            "metaSortKey": -1659837422926.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d3dae6bbaf134a60a15e062bd3c60d6f",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622571,
+            "created": 1659860622571,
+            "url": "http://localhost:3000/orders",
+            "name": "list orders admin",
+            "description": "",
+            "method": "GET",
+            "body": { "mimeType": "application/x-www-form-urlencoded", "params": [] },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" },
+                {
+                    "id": "pair_8bd6dc878ea641cfb671a269ee08965d",
+                    "name": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6IjYyODIzMzk4MzU3ODMiLCJpYXQiOjE2NTk4NTk3MjV9.urcKTB-fbxBpXLC4dXPmia0sK6sh7FR_fh0Lw8_5uFs",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659833862723.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1aded0ddb15f4e88bd45152356637b1b",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622589,
+            "created": 1659860622589,
+            "url": "http://localhost:3000/orders/1",
+            "name": "orders",
+            "description": "",
+            "method": "POST",
+            "body": { "mimeType": "application/x-www-form-urlencoded", "params": [{ "id": "pair_5279359bb3fa4206ac9ca59d9f70e8bc", "name": "amount", "value": "24", "description": "" }] },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" },
+                {
+                    "id": "pair_51afdcb5d2224c27abc08bf6864de7fd",
+                    "name": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6IjYyODIzMzk4MzU3ODMxMiIsImlhdCI6MTY1OTg1OTgzNn0.xJIavgk0aiZagePy4LvJzlAMPwcTTPh-E73AHUk4m7w",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659833862673.625,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_12fc8a332bb64053aca584d2f0181405",
+            "parentId": "fld_a3847b5cad8c400d9564d193afec81dc",
+            "modified": 1659860622596,
+            "created": 1659860622596,
+            "url": "http://localhost:3000/orders/7",
+            "name": "payment",
+            "description": "",
+            "method": "PUT",
+            "body": { "mimeType": "application/x-www-form-urlencoded", "params": [] },
+            "parameters": [],
+            "headers": [
+                { "name": "Content-Type", "value": "application/x-www-form-urlencoded", "id": "pair_e0ba918dc23647e88380aecaefca11e5" },
+                {
+                    "id": "pair_51afdcb5d2224c27abc08bf6864de7fd",
+                    "name": "access_token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZU51bWJlciI6IjYyODIzMzk4MzU3ODMiLCJpYXQiOjE2NTk4NTk3MjV9.urcKTB-fbxBpXLC4dXPmia0sK6sh7FR_fh0Lw8_5uFs",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1659832082597.3125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_410a44ef2dfe68095eecb7fe4d35668d129ee3f4",
+            "parentId": "wrk_78dae7cdb4604ca2ae0bb565d05de346",
+            "modified": 1659860852645,
+            "created": 1659527709881,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": {},
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1659527709881,
+            "_type": "environment"
+        },
+        { "_id": "jar_410a44ef2dfe68095eecb7fe4d35668d129ee3f4", "parentId": "wrk_78dae7cdb4604ca2ae0bb565d05de346", "modified": 1659527709891, "created": 1659527709891, "name": "Default Jar", "cookies": [], "_type": "cookie_jar" },
+        {
+            "_id": "spc_3f24f1fc27464bbe8b55c37cb77dfedf",
+            "parentId": "wrk_78dae7cdb4604ca2ae0bb565d05de346",
+            "modified": 1659860946130,
+            "created": 1659527709868,
+            "fileName": "Mandaya technical test",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        { "_id": "uts_150db183c35a4b83bf3bf322b331c3d6", "parentId": "wrk_78dae7cdb4604ca2ae0bb565d05de346", "modified": 1659527709904, "created": 1659527709904, "name": "Example Test Suite", "_type": "unit_test_suite" }
+    ]
+}
